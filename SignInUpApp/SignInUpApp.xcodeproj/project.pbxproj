@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		C782D6092A95EB74002002CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6082A95EB74002002CD /* AppDelegate.swift */; };
 		C782D60B2A95EB74002002CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D60A2A95EB74002002CD /* SceneDelegate.swift */; };
-		C782D60D2A95EB74002002CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D60C2A95EB74002002CD /* ViewController.swift */; };
-		C782D6102A95EB74002002CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D60E2A95EB74002002CD /* Main.storyboard */; };
+		C782D6102A95EB74002002CD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D60E2A95EB74002002CD /* MainStoryboard.storyboard */; };
 		C782D6122A95EB77002002CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C782D6112A95EB77002002CD /* Assets.xcassets */; };
 		C782D6152A95EB77002002CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D6132A95EB77002002CD /* LaunchScreen.storyboard */; };
+		C782D61F2A9627EB002002CD /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D61E2A9627EB002002CD /* SignInStoryboard.storyboard */; };
+		C782D6212A962AF6002002CD /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D6202A962AF6002002CD /* SignUpStoryboard.storyboard */; };
+		C782D6242A962E49002002CD /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6232A962E49002002CD /* SignInVC.swift */; };
+		C782D6262A9638C4002002CD /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6252A9638C4002002CD /* CreateAccountVC.swift */; };
+		C782D6282A964161002002CD /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6272A964161002002CD /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C782D6052A95EB74002002CD /* SignInUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C782D6082A95EB74002002CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C782D60A2A95EB74002002CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C782D60C2A95EB74002002CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C782D60F2A95EB74002002CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C782D60F2A95EB74002002CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C782D6112A95EB77002002CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C782D6142A95EB77002002CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C782D6162A95EB77002002CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C782D61E2A9627EB002002CD /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
+		C782D6202A962AF6002002CD /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
+		C782D6232A962E49002002CD /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		C782D6252A9638C4002002CD /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		C782D6272A964161002002CD /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		C782D6072A95EB74002002CD /* SignInUpApp */ = {
 			isa = PBXGroup;
 			children = (
-				C782D6082A95EB74002002CD /* AppDelegate.swift */,
-				C782D60A2A95EB74002002CD /* SceneDelegate.swift */,
-				C782D60C2A95EB74002002CD /* ViewController.swift */,
-				C782D60E2A95EB74002002CD /* Main.storyboard */,
-				C782D6112A95EB77002002CD /* Assets.xcassets */,
-				C782D6132A95EB77002002CD /* LaunchScreen.storyboard */,
+				C782D6222A962E24002002CD /* Controllers */,
+				C782D61D2A95EC9E002002CD /* Views */,
 				C782D6162A95EB77002002CD /* Info.plist */,
+				C782D6112A95EB77002002CD /* Assets.xcassets */,
+				C782D61C2A95EC77002002CD /* AppDelegate */,
 			);
 			path = SignInUpApp;
+			sourceTree = "<group>";
+		};
+		C782D61C2A95EC77002002CD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C782D6082A95EB74002002CD /* AppDelegate.swift */,
+				C782D60A2A95EB74002002CD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C782D61D2A95EC9E002002CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C782D6132A95EB77002002CD /* LaunchScreen.storyboard */,
+				C782D61E2A9627EB002002CD /* SignInStoryboard.storyboard */,
+				C782D6202A962AF6002002CD /* SignUpStoryboard.storyboard */,
+				C782D60E2A95EB74002002CD /* MainStoryboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C782D6222A962E24002002CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C782D6232A962E49002002CD /* SignInVC.swift */,
+				C782D6252A9638C4002002CD /* CreateAccountVC.swift */,
+				C782D6272A964161002002CD /* UIViewControllerExt.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +161,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C782D6212A962AF6002002CD /* SignUpStoryboard.storyboard in Resources */,
 				C782D6152A95EB77002002CD /* LaunchScreen.storyboard in Resources */,
 				C782D6122A95EB77002002CD /* Assets.xcassets in Resources */,
-				C782D6102A95EB74002002CD /* Main.storyboard in Resources */,
+				C782D6102A95EB74002002CD /* MainStoryboard.storyboard in Resources */,
+				C782D61F2A9627EB002002CD /* SignInStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +176,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C782D60D2A95EB74002002CD /* ViewController.swift in Sources */,
+				C782D6282A964161002002CD /* UIViewControllerExt.swift in Sources */,
 				C782D6092A95EB74002002CD /* AppDelegate.swift in Sources */,
 				C782D60B2A95EB74002002CD /* SceneDelegate.swift in Sources */,
+				C782D6262A9638C4002002CD /* CreateAccountVC.swift in Sources */,
+				C782D6242A962E49002002CD /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C782D60E2A95EB74002002CD /* Main.storyboard */ = {
+		C782D60E2A95EB74002002CD /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C782D60F2A95EB74002002CD /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		C782D6132A95EB77002002CD /* LaunchScreen.storyboard */ = {
@@ -292,9 +332,10 @@
 				INFOPLIST_FILE = SignInUpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hhh.SignInUpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +364,10 @@
 				INFOPLIST_FILE = SignInUpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hhh.SignInUpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
