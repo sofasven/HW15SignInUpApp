@@ -18,9 +18,13 @@ class WelcomVC: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
+    var userDefaults = UserDefaults.standard
     
     @IBAction func continueAction() {
     //TODO: - save data
+        userDefaults.set(userModel?.name, forKey: "name")
+        userDefaults.set(userModel?.email, forKey: "email")
+        userDefaults.set(userModel?.pass, forKey: "pass")
         navigationController?.popToRootViewController(animated: true)
     }
     private func setupUI() {

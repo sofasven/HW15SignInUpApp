@@ -44,6 +44,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="emailTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="2X2-hs-wSC"/>
+                                                </connections>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-dd-SP0">
                                                 <rect key="frame" x="0.0" y="74" width="343" height="68"/>
@@ -52,6 +55,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <connections>
+                                                            <action selector="passTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="JmU-3E-7uG"/>
+                                                        </connections>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error password or email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S9-L8-j2V">
                                                         <rect key="frame" x="0.0" y="44" width="343" height="24"/>
@@ -73,6 +79,10 @@
                                     <color key="baseForegroundColor" red="0.080667822390000005" green="0.49269195189999998" blue="0.1177423292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.78731912626660283" green="0.82605018689266274" blue="0.62511172133969495" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1xE-wv-BOk"/>
+                                    <segue destination="v28-zZ-jvH" kind="show" identifier="goToMainStoryboard" id="c4w-Jb-NOp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -98,6 +108,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1040.4580152671756" y="-27.464788732394368"/>
+        </scene>
+        <!--MainStoryboard-->
+        <scene sceneID="gOG-8H-Jnj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainStoryboard" id="v28-zZ-jvH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HNE-Iq-6Rq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahS-mp-O1E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="235"/>
         </scene>
         <!--SignUpStoryboard-->
         <scene sceneID="zQD-tQ-Jth">
