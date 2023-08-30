@@ -45,7 +45,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="emailTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="2X2-hs-wSC"/>
+                                                    <action selector="emailTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="THm-vn-y4B"/>
                                                 </connections>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-dd-SP0">
@@ -56,7 +56,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                         <connections>
-                                                            <action selector="passTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="JmU-3E-7uG"/>
+                                                            <action selector="passTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="pl6-Fk-JZP"/>
                                                         </connections>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error password or email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S9-L8-j2V">
@@ -81,7 +81,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signInAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1xE-wv-BOk"/>
-                                    <segue destination="v28-zZ-jvH" kind="show" identifier="goToMainStoryboard" id="c4w-Jb-NOp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,6 +102,7 @@
                         <outlet property="errorLbl" destination="8S9-L8-j2V" id="DHI-3e-X6V"/>
                         <outlet property="passwordTF" destination="zJS-Wb-Us0" id="Rb4-Zh-F1Z"/>
                         <outlet property="signInBtn" destination="c1y-kf-dZr" id="FE8-QP-Tb5"/>
+                        <segue destination="v28-zZ-jvH" kind="show" identifier="goToMainStoryboard" id="luE-ta-uZK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

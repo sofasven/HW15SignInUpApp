@@ -14,63 +14,61 @@ class SignInVC: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var errorLbl: UILabel!
     @IBOutlet weak var signInBtn: UIButton!
+    
     var checkEmail = false
     var checkPass = false
-    
-    let savedName = UserDefaults.standard.string(forKey: "name")
-    let savedEmail = UserDefaults.standard.string(forKey: "email")
-    let savedPass = UserDefaults.standard.string(forKey: "pass")
-    
-
-    @IBAction func emailTFAction(_ sender: UITextField) {
-        if let email = sender.text,
-           !email.isEmpty,
-           email == savedEmail {
-            checkEmail = true
-        } else {
-            checkEmail = false
-        }
-        errorLbl.isHidden = checkEmail
-        updateSignInStateBtn()
-    }
-    
-    @IBAction func passTFAction(_ sender: UITextField) {
-        if let pass = sender.text,
-           !pass.isEmpty,
-           pass == savedPass {
-            checkPass = true
-        } else {
-            checkPass = false
-        }
-        errorLbl.isHidden = checkPass
-        updateSignInStateBtn()
-    }
-    private func updateSignInStateBtn() {
-        signInBtn.isEnabled = checkEmail && checkPass
-    }
-    
-    @IBAction func signInAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToMainStoryboard", sender: savedName)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        if let _ = UserDefaultsService.getUserModel() {
+            goToTabBarController()
+        }
     }
+    
+    @IBAction func emailTFAction(_ sender: UITextField) {
+        guard let email = sender.text,
+              !email.isEmpty,
+              VerificationService.isValidEmail(email: email) else { return }
+        checkEmail = true
+        updateSignInBtn()
+    }
+    
+    @IBAction func passTFAction(_ sender: UITextField) {
+        guard let pass = sender.text,
+              !pass.isEmpty,
+              VerificationService.isValidPassword(pass: pass) != .veryWeak else { return }
+        checkPass = true
+        updateSignInBtn()
+    }
+    
+    @IBAction func signInAction(_ sender: UIButton) {
+        guard let email = emailTF.text,
+              let pass = passwordTF.text,
+              let userModel = UserDefaultsService.getUserModel(),
+              email == userModel.email,
+              pass == userModel.pass
+        else {
+            errorLbl.isHidden = false
+            return
+        }
+       goToTabBarController()
+    }
+    private func goToTabBarController() {
+        performSegue(withIdentifier: "goToMainStoryboard", sender: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        emailTF.text = ""
+        passwordTF.text = ""
+    }
+    private func updateSignInBtn() {
+        signInBtn.isEnabled = checkEmail && checkPass
+    }
+    
     private func setupUI () {
         signInBtn.isEnabled = false
         errorLbl.isHidden = true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
