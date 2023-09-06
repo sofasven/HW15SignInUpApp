@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C711C3662A9A441B003132AF /* VerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711C3652A9A441B003132AF /* VerificationService.swift */; };
+		C711C3692A9A5118003132AF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711C3682A9A5118003132AF /* UserModel.swift */; };
+		C711C36B2A9A536D003132AF /* VerificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711C36A2A9A536D003132AF /* VerificationsVC.swift */; };
+		C711C36D2A9A61A1003132AF /* WelcomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711C36C2A9A61A1003132AF /* WelcomVC.swift */; };
+		C719E7102A9FC48D00F65DEB /* ChangeAccounDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719E70F2A9FC48D00F65DEB /* ChangeAccounDataVC.swift */; };
+		C771CEE52A9F8F4000E093EF /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771CEE42A9F8F4000E093EF /* UserDefaultsService.swift */; };
+		C771CEE72A9F907000E093EF /* UserDefaultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771CEE62A9F907000E093EF /* UserDefaultsExt.swift */; };
+		C77684422A9FB17200706D99 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77684412A9FB17200706D99 /* ProfileVC.swift */; };
 		C782D6092A95EB74002002CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6082A95EB74002002CD /* AppDelegate.swift */; };
 		C782D60B2A95EB74002002CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D60A2A95EB74002002CD /* SceneDelegate.swift */; };
-		C782D60D2A95EB74002002CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D60C2A95EB74002002CD /* ViewController.swift */; };
-		C782D6102A95EB74002002CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D60E2A95EB74002002CD /* Main.storyboard */; };
+		C782D6102A95EB74002002CD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D60E2A95EB74002002CD /* MainStoryboard.storyboard */; };
 		C782D6122A95EB77002002CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C782D6112A95EB77002002CD /* Assets.xcassets */; };
 		C782D6152A95EB77002002CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D6132A95EB77002002CD /* LaunchScreen.storyboard */; };
+		C782D61F2A9627EB002002CD /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D61E2A9627EB002002CD /* SignInStoryboard.storyboard */; };
+		C782D6212A962AF6002002CD /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C782D6202A962AF6002002CD /* SignUpStoryboard.storyboard */; };
+		C782D6242A962E49002002CD /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6232A962E49002002CD /* SignInVC.swift */; };
+		C782D6262A9638C4002002CD /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6252A9638C4002002CD /* CreateAccountVC.swift */; };
+		C782D6282A964161002002CD /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782D6272A964161002002CD /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C711C3652A9A441B003132AF /* VerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationService.swift; sourceTree = "<group>"; };
+		C711C3682A9A5118003132AF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C711C36A2A9A536D003132AF /* VerificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsVC.swift; sourceTree = "<group>"; };
+		C711C36C2A9A61A1003132AF /* WelcomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomVC.swift; sourceTree = "<group>"; };
+		C719E70F2A9FC48D00F65DEB /* ChangeAccounDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAccounDataVC.swift; sourceTree = "<group>"; };
+		C771CEE42A9F8F4000E093EF /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		C771CEE62A9F907000E093EF /* UserDefaultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExt.swift; sourceTree = "<group>"; };
+		C77684412A9FB17200706D99 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C782D6052A95EB74002002CD /* SignInUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C782D6082A95EB74002002CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C782D60A2A95EB74002002CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C782D60C2A95EB74002002CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C782D60F2A95EB74002002CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C782D60F2A95EB74002002CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C782D6112A95EB77002002CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C782D6142A95EB77002002CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C782D6162A95EB77002002CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C782D61E2A9627EB002002CD /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
+		C782D6202A962AF6002002CD /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
+		C782D6232A962E49002002CD /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		C782D6252A9638C4002002CD /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		C782D6272A964161002002CD /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C711C3642A9A43CF003132AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C711C3652A9A441B003132AF /* VerificationService.swift */,
+				C771CEE42A9F8F4000E093EF /* UserDefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C711C3672A9A50FD003132AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C711C3682A9A5118003132AF /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C771CEE32A9F8EC500E093EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C782D6272A964161002002CD /* UIViewControllerExt.swift */,
+				C771CEE62A9F907000E093EF /* UserDefaultsExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C782D5FC2A95EB74002002CD = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +106,49 @@
 		C782D6072A95EB74002002CD /* SignInUpApp */ = {
 			isa = PBXGroup;
 			children = (
-				C782D6082A95EB74002002CD /* AppDelegate.swift */,
-				C782D60A2A95EB74002002CD /* SceneDelegate.swift */,
-				C782D60C2A95EB74002002CD /* ViewController.swift */,
-				C782D60E2A95EB74002002CD /* Main.storyboard */,
-				C782D6112A95EB77002002CD /* Assets.xcassets */,
-				C782D6132A95EB77002002CD /* LaunchScreen.storyboard */,
+				C771CEE32A9F8EC500E093EF /* Extensions */,
+				C711C3672A9A50FD003132AF /* Models */,
+				C782D6222A962E24002002CD /* Controllers */,
+				C782D61D2A95EC9E002002CD /* Views */,
+				C711C3642A9A43CF003132AF /* Services */,
 				C782D6162A95EB77002002CD /* Info.plist */,
+				C782D6112A95EB77002002CD /* Assets.xcassets */,
+				C782D61C2A95EC77002002CD /* AppDelegate */,
 			);
 			path = SignInUpApp;
+			sourceTree = "<group>";
+		};
+		C782D61C2A95EC77002002CD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C782D6082A95EB74002002CD /* AppDelegate.swift */,
+				C782D60A2A95EB74002002CD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C782D61D2A95EC9E002002CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C782D6132A95EB77002002CD /* LaunchScreen.storyboard */,
+				C782D61E2A9627EB002002CD /* SignInStoryboard.storyboard */,
+				C782D6202A962AF6002002CD /* SignUpStoryboard.storyboard */,
+				C782D60E2A95EB74002002CD /* MainStoryboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C782D6222A962E24002002CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C782D6232A962E49002002CD /* SignInVC.swift */,
+				C782D6252A9638C4002002CD /* CreateAccountVC.swift */,
+				C711C36A2A9A536D003132AF /* VerificationsVC.swift */,
+				C711C36C2A9A61A1003132AF /* WelcomVC.swift */,
+				C77684412A9FB17200706D99 /* ProfileVC.swift */,
+				C719E70F2A9FC48D00F65DEB /* ChangeAccounDataVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +209,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C782D6212A962AF6002002CD /* SignUpStoryboard.storyboard in Resources */,
 				C782D6152A95EB77002002CD /* LaunchScreen.storyboard in Resources */,
 				C782D6122A95EB77002002CD /* Assets.xcassets in Resources */,
-				C782D6102A95EB74002002CD /* Main.storyboard in Resources */,
+				C782D6102A95EB74002002CD /* MainStoryboard.storyboard in Resources */,
+				C782D61F2A9627EB002002CD /* SignInStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +224,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C782D60D2A95EB74002002CD /* ViewController.swift in Sources */,
+				C77684422A9FB17200706D99 /* ProfileVC.swift in Sources */,
+				C719E7102A9FC48D00F65DEB /* ChangeAccounDataVC.swift in Sources */,
+				C782D6282A964161002002CD /* UIViewControllerExt.swift in Sources */,
+				C711C3692A9A5118003132AF /* UserModel.swift in Sources */,
+				C771CEE52A9F8F4000E093EF /* UserDefaultsService.swift in Sources */,
 				C782D6092A95EB74002002CD /* AppDelegate.swift in Sources */,
+				C771CEE72A9F907000E093EF /* UserDefaultsExt.swift in Sources */,
+				C711C3662A9A441B003132AF /* VerificationService.swift in Sources */,
+				C711C36D2A9A61A1003132AF /* WelcomVC.swift in Sources */,
 				C782D60B2A95EB74002002CD /* SceneDelegate.swift in Sources */,
+				C782D6262A9638C4002002CD /* CreateAccountVC.swift in Sources */,
+				C782D6242A962E49002002CD /* SignInVC.swift in Sources */,
+				C711C36B2A9A536D003132AF /* VerificationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C782D60E2A95EB74002002CD /* Main.storyboard */ = {
+		C782D60E2A95EB74002002CD /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C782D60F2A95EB74002002CD /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		C782D6132A95EB77002002CD /* LaunchScreen.storyboard */ = {
@@ -292,9 +388,10 @@
 				INFOPLIST_FILE = SignInUpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +399,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hhh.SignInUpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +420,10 @@
 				INFOPLIST_FILE = SignInUpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +431,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hhh.SignInUpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
